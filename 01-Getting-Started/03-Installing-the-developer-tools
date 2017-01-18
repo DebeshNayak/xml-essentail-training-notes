@@ -1,0 +1,24 @@
+Installing the developer tools:
+- Any Code Editor is suitable like: Atom, Sublime
+- But Aptana Studio is the best choice.
+- After install Aptana do the following: (Below steps not working)
+  1. Explore to the project folder in the "Project Explorer" section
+  2. Right click that folder and select "Promote to Project", where select "Web - Primary"
+    option and click "Finish"
+  3. Then we need to install some software to the Aptana Studio
+    - In the help menu select "Install New Software"
+    - In the "Work with" drop down select "Eclipse <latest version> update sites"
+    - Expand "Web, XML, Java EE and OSGi Enterprise Development" section
+    - Select both "Eclipse XML Editor and Tools" and "Eclipse XSL Developer Tools" and
+      install those.
+- Another tool: eclipse-xpath-evaluation-plugin (Imp)
+https://code.google.com/p/eclipse-xpath-evaluation-plugin/wiki/Installation
+  - Copy the link: https://raw.githubusercontent.com/stoupa91/eclipse-xpath-evaluation-plugin/master/eclipse-xpath-evaluation-plugin-update-site/
+  - Open Eclipse
+  - Go to "Help" -> Install New Software
+  - Click "Add" button of the "Work with" section.
+  - Give the name XPath, and paste the copied link in the Location text box.
+  - And install the software
+- To open the XPath Editor
+  - Go to Window menu
+  - Show View -> Others -> XPath (with  different color icon)

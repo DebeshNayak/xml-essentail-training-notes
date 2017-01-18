@@ -1,0 +1,29 @@
+XML-related technologies:
+1. XPath - eXtensible Path Language
+  - The reason it's called XPath is because if you've ever worked with folder and
+    directory names and filenames, you'll notice that most computer systems organize
+    those as a path.
+  - So there's a route drive, and that's followed by some folder names down to a
+    filename.
+  - And all of those are usually separated by some kind of path character, like a
+    slash or a colon.
+  - XPath is very similar, and it's used to find and extract information from XML documents
+
+2. XSLT - XML Stylesheet language Transformations
+  - XSLT can be used to style XML information, but the real important word there is
+    transformations.
+  - XSLT is a way of taking XML information and transforming it into another XML format,
+    PDF, text file, web page or may be other kind of file format.
+
+3. XQuery - More advanced querying language than XPath
+  -  XQuery, is a querying language, like a database language, like SQL except for XML.
+  - It's used for extracting information in a very advanced way from XML data.
+  - Using XQuery, you can build really complex queries that search multiple XML
+    files to extract information.
+
+4. XPointer/XLink - Links between and within XML documents
+  - Create links between and within XML documents
+  - Conceptually, this is similar to the link tag in HTML with a lot more power.
+
+- The XQuery, XPointer, and XLink are very advance. And we are not covering in this course
+- We are focusing on XPath and XSLT.
