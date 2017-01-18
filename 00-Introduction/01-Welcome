@@ -1,0 +1,14 @@
+Welcome:
+- XML has become a widely used standard for storing and exchanging information on the internet.
+- Knowing how to work with XML has become a core skill that every developer needs to have.
+- In this course we will learn:
+  * What XML is and does
+  * Some of its advantages and drawbacks
+  * We will create and style XML content using a variety of approaches
+    - CSS
+    - Using the browser's DOM
+  * Investigate complimentary XML technologies
+    - XPath, XSLT
+  * How these can be used to manipulate XML content
+  * How to use document type definitions and XML schema to help ensure that
+    XML data is error free.
