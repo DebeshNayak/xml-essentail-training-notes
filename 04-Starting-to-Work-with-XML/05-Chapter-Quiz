@@ -1,0 +1,8 @@
+1. When displaying an XML document with comments on a browser, the comments do not show.
+Ans: Yes, this is false.
+
+2. The option that correctly associates a style sheet to an XML document is _____.
+Ans: <?xml-stylesheet type="text/css" href="myFile.css"?>
+
+3. What do you use to add the content "main" in front of a phone number?
+Ans: phone:before
