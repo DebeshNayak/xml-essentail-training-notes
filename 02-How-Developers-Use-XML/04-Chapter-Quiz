@@ -1,0 +1,12 @@
+1. An advantage of XML is that it applies description and structure to the data that you're working with.
+Ans: True
+
+2. Which of the following is not an advantage of XML?
+Ans:
+- Overall, it has better performance than JSON. (Not a advantage)
+- It can be read by many applications. (Advantage)
+- It keeps content separate from presentation.(Advantage)
+- It can be used on client and server.(Advantage)
+
+3. RSS is a data format that is used for publishing blogs.
+Ans: True

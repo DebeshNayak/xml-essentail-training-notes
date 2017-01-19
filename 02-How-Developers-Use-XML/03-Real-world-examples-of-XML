@@ -1,0 +1,12 @@
+Real-world examples of XML:
+- RSS (Really Simple Syndication)
+- XML is used in wide different areas like:
+  - for displaying news information,
+  - weather
+  - file formats
+  - for Office related software
+- XML is really flexible to solve lot of different data related problems.
+Example:
+1. CNN RSS feeds - http://edition.cnn.com/services/rss/
+2. New York Times RSS Feeds - http://www.nytimes.com/services/xml/rss/index.html
+3. Microsoft Office XML Format - https://en.wikipedia.org/wiki/Microsoft_Office_XML_formats

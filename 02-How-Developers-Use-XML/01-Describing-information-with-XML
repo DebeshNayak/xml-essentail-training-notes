@@ -1,0 +1,16 @@
+Describing Data with XML:
+----------------------
+
+Debesh Nayak
++91 94375 29902 (home)
++91 94345 78342 (work)
++91 88949 35948 (mobile)
+debesh@debesh.com
+
+<BusinessCard>
+  <name>Debesh Nayak</name>
+  <phone type="home">+91 94375 29902</phone>
+  <phone type="work">+91 94345 78342</phone>
+  <phone type="mobile">+91 88949 35948</phone>
+  <email>debesh@debesh.com</email>
+</BusinessCard>

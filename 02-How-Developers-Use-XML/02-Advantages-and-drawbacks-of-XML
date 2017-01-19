@@ -1,0 +1,12 @@
+Advantages and drawbacks of XML:
+- XML keeps content separate from presentation
+- XML is an open format that can be read by many applications
+- XML can be used on both the client and the server
+- XML has widespread support in multiple languages, runtimes
+- XML makes it possible for disparate systems to exchange data.
+
+Drawback of XML:
+- XML is not suitable for very large data sets.
+- Some formats, like JSON, might be better in some cases
+- Some data types, like images, aren't represented well
+- XML can quickly get hard to read when complex
