@@ -1,0 +1,9 @@
+Proper XML syntax:
+* XML documents must have a single root tag
+* XML documents must be "well-formed"
+* Empty tags must be closed with />
+  - Instead of <elem></elem>, use <elem />
+* Attribute values cannot be mininmized
+* Attribute values must be inside of quotes, single or double
+  - <elem attr=val> is illegal, use <elem attr="val">
+* Tag properly nested inside each other.

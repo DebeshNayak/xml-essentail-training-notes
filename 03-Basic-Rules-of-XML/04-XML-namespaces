@@ -1,0 +1,43 @@
+XML namespaces:
+- XML Namespaces are used so that you can combine data from separate sources without having
+  to worry about tag name collisions.
+- Form(example): <html xmlns="http://www.w3.org/1999/xhtml">
+- Prevent tags from different languages from conflicting
+Example:
+HTML:
+<table>
+  <tr>
+    <td>Cell Content</td>
+  </tr>
+  <tr>
+    <td>Cell Content</td>
+  </tr>
+</table>
+
+XML:
+<table>
+  <type>Coffee</type>
+  <price>199.99</price>
+  <material>wood</material>
+  <stock>25</stock>
+</table>
+
+- If we put the XML inside HTML then it will create tag name collision to the HTML parser
+- That's where the XML Namespaces comes in
+XML Namespaces:
+Example: (XML and HTML integration)
+
+<html xmlns:"http://www.w3.org/1999/xhtml"
+      xmlns:furn="http://www.furniture.org/items">
+<table>
+  <tr>
+    <td>
+      <furn:table>
+        <furn:type>Coffee</furn:type>
+        <furn:price>199.99</furn:price>
+        <furn:materail>wood<furn:material>
+        <furn:stock>25</furn:stock>
+      </furn:table>
+    </td>
+  </tr>
+</table>

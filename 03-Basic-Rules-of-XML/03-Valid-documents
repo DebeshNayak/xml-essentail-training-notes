@@ -1,0 +1,11 @@
+Valid XML documents:
+- Well formed XML document - if the XML document correctly parse by the XML parser
+- Valid XML document - if we provide a set of rules to XML parser and it parse it correctly
+There is two ways to do this:
+1. Document Type Definitions (DTDs)
+  - Simple to use, but ont very powerful
+  - Written using a syntax that's different than XML
+
+2. XML Schema
+  - Much more powerful and flexible than DTD
+  - Written using XML syntax rules
