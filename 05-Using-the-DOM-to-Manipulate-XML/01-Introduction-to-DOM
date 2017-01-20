@@ -1,0 +1,75 @@
+Introduction to DOM:
+* XML and the DOM:
+  - The CSS approach to add appearance to XML has some downsides.
+    1. There's no way to re-order the XML content using CSS.
+    2. If you have an XML tag that has meaning. And you want to take
+      an XML tag, and based upon its value, perform some functions.
+      CSS doesn't really give you a good way of doing that
+* The Document Object Model:
+  - Standard set of APIs for working with document content
+  - Platform, browser, and language neutral
+  - Represents document content as a tree structure
+Example:
+
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Paragraph Text</p>
+  </body>
+</html>
+
+Tree structure:
+          +--------+
+     +----+ HTML   +-----+
+     |    +--------+     |
+     |                   |
++----+---+          +----+----+
+|  HEAD  |          |  BODY   |
++----+---+          +----+----+
+     |                   |
+     |                   |
++----+---+          +----+----+
+| TITLE  |          |    P    |
++----+---+          +----+----+
+     |                   |
+     |                   |
++----+-----+        +----+-----------+
+|"Document"|        |"Paragraph Text"|
++----------+        +----------------+
+--------------
+Important DOM Properties:
+- Property: Description
+  - nodeName: The name of the node. For tags, its the tag name. For comments and text, it's
+    special names like "#comment" or "#text"
+  - nodeType: The node's type. Element, Comment, Text, etc.
+  - nodeValue: The node's value. Varies based on node type
+  - attributes: For elements only. An array of attributes and values
+  - parentNode: The parent of this node. Null If there is no parent
+  - childNodes: Array of child nodes. Empty if there are none
+  - firstChild, lastChild: References to first and last child of this node
+  - previousSibling, nextSibling: References to previous and next sibling of this node
+----------
+* There are function for Node and moving them in the document:
+- Function: Description
+  - appendChild(): Inserts an element at the end of a given element's children
+  - removeChild(): Removes an element from the parent
+  - insertBefore(): Inserts a new node before the given node
+  - replaceChild(): Replaces an existing node inside the parent with a new one
+-----------
+* Document Functions
+- Function: Description
+  - documentElement: Reference to the root document element
+  - createElement(): Creates new element that can be inserted in document
+  - createTextNode(): Creates new text node
+  - createComment(): Creates new comment
+  - createCDATASection(): Creates new CDATA Section
+  - getElementsByTagName(): Returns array of tags that match given tag name
+  - getElementById(): Returns a single element with a given ID
+---------
+- getAttribute(): Get the value of a given attribute on an element
+- setAttribute(): Sets the value of an attribute on an element
+- removeAttribute(): Removes an attribute from an element
+- innerHTML: Gets or sets the HTML content of the given tag
+- data: Gets the text data of an Element, Comment, or Text node

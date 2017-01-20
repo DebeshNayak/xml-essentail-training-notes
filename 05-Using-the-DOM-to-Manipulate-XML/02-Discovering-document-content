@@ -1,0 +1,4 @@
+Discovering document content:
+- By using some basic DOM API's, it's pretty easy to discover the value of various
+  XML content in your document.
+Example: 05-Discovering-Document-Content

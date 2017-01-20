@@ -1,6 +1,7 @@
 How to associate style information with the XML tag:
-- We can add a CSS style sheet to a XML file using the following line in the XML file:
+- We can give appearance to a XML file by adding a CSS style sheet using the following line in the XML file:
 <?xml-stylesheet type="text/css" href="myFile.css"?>
 
+- It is a type of processing instruction.
 - Formatting XML with CSS is not recommended. Use JavaScript or XSLT instead.
 Example: 02-Associating-XML-CSS project

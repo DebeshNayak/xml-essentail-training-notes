@@ -16,7 +16,7 @@ XML-related technologies:
     PDF, text file, web page or may be other kind of file format.
 
 3. XQuery - More advanced querying language than XPath
-  -  XQuery, is a querying language, like a database language, like SQL except for XML.
+  - XQuery, is a querying language, like a database language, like SQL except for XML.
   - It's used for extracting information in a very advanced way from XML data.
   - Using XQuery, you can build really complex queries that search multiple XML
     files to extract information.

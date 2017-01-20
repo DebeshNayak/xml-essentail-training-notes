@@ -17,7 +17,7 @@ In this chapter we will describe the following:
 +------------------------------------------------------------------------+
 |Comments              |<-- this is a comment -->                        |
 +------------------------------------------------------------------------+
-|Character Data        |<![CDATA[This is text & data>]]                  |
+|Character Data        |<![CDATA[This is text & data>]]>                 |
 +------------------------------------------------------------------------+
 |Processing Instruction|<?SpellCheckMode mode="us-english" ?>            |
 +------------------------------------------------------------------------+
@@ -40,7 +40,7 @@ XML Elements (Tags)
 Elements must have valid names
   - They can begin with underscore "_" or letter
   - Followed by letters, digits, periods, hyphens, underscores
-  * Cannot use the string "xml" in any case combination
+  - Cannot use the string "xml" in any case combination
   +----------------------+    +--------------------------------------+
   |  Valid Tag Names     |    |     Invalid Tag Names                |
   +----------------------+    +--------------------------------------+
@@ -73,13 +73,13 @@ Not parsed, so & and < and > are legal
   function f(a, b){
     return a < b;
   }
-]]
+]]>
 </script>
 ---------------
 Processing Instructions
 * Special instructions to the XML parser
 * Have the form <?targetName instruction ?>
-  - The "xml" target anem is reserved
+  - The "xml" target name is reserved
   * Can start with number or letter, then be followed by digits, letters, hyphens, periods, underscores
 <?SpellcheckMode mode="en-GB" ?>
 ----------------

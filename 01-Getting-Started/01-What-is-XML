@@ -2,7 +2,7 @@ What is XML?
 - XML is the "eXtensible Markup Language"
 - XML became a W3C Recommendation in 1998
 - Tag-based syntax, very much like HTML
--  XML is not a replacement for HTML
+- XML is not a replacement for HTML
 - X means eXtensible - you can make your own tags
   - It is a way of defining tags to mark up data and solve particular information related problems.
 - XML is the foundation of several Web technologies

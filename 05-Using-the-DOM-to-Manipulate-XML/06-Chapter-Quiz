@@ -1,0 +1,8 @@
+1. Properties, Element, Comment, and Text are examples of _____ in the DOM.
+Ans: nodeType
+
+2. Select the correct option that calls a function when the window loads.
+Ans: window.addEventListener("load", takeAction());
+
+3. The following code removes the first child node from a list. list.removeChild(list.childNodes[0]);
+Ans: True
