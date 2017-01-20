@@ -1,0 +1,2 @@
+1. If you need to get the second span in the body, which path would you use?
+Ans: /html/body/span[2]

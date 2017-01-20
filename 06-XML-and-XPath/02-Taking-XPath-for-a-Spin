@@ -1,0 +1,15 @@
+Taking XPath for a spin:
+
+- XPath is case sensitive
+
+- It will show all the name that that contains the word 'Tom'
+//Name[contains(text(), 'Tom')]
+
+- Select all the phone tags that have type attribute
+//phone[@type]
+
+- Select all the phone tags that have type equal to mobile attribute
+//phone[@type='mobile']
+
+- Select all the photos of Tea
+/items/item[type='Tea']/photo
