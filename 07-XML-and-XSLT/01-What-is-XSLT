@@ -1,0 +1,31 @@
+What is XSLT?
+- eXtensible Stylesheet Language Transformations
+- Different than CSS - applies templates to XML data
+- Written using XML syntax itself
+----------
+- Can transform XML into almost anything
+- Can perform operations directly on the data
+- Learn more at http://www.w3.org/TR/xslt
+----------
+Creating XSLT Stylesheets:
+- Defined using the <xsl:stylesheet> root tag
+- Typically contain <xsl:template> tags
+- Templates are matched to XML tags in the source data
+- The contents of the template replace the source XML
+- Templates contain other XSLT directives
+- Templates can also be invoked by name
+
+
++------------+
+|   XML      |
+| Document   +------------+
+|            |            |
++------------+       +----v-----------+      +------------+
+                     |     XSLT       |      |   Result   |
+                     | Transformation +------>  Document  |
+                     |    Engine      |      |            |
++------------+       +----^-----------+      +------------+
+|  XSLT      |            |
+| Document   |            |
+|            +------------+
++------------+

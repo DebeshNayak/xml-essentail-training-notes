@@ -1,0 +1,5 @@
+1. With XSLT, you can loop over content and sort content.
+Ans: True
+
+2. Which of the following do you use to select numerical data?
+Ans: xsl:value-of
