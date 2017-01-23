@@ -1,0 +1,3 @@
+Repeating Items:
+- Working with repeating items in XML using XSLT is pretty straight forward and easy, just use the for-each tag.
+Example: 11-repeating-items project

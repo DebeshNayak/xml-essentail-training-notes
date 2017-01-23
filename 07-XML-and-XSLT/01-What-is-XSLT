@@ -3,7 +3,7 @@ What is XSLT?
 - Different than CSS - applies templates to XML data
 - Written using XML syntax itself
 ----------
-- Can transform XML into almost anything
+- Can transform XML into almost anything i.e. PDF, HTML, Word file etc.
 - Can perform operations directly on the data
 - Learn more at http://www.w3.org/TR/xslt
 ----------

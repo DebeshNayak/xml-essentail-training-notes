@@ -1,0 +1,8 @@
+1. Select the option that adds a style sheet to the current page.
+Ans: add in the header: <link rel="stylesheet" href="transform.css"/>
+
+2. Which of the following helps you loop over a list of items in the XML?
+Ans: xsl:for-each
+
+3. Select the correct option that checks whether the attribute reflects an even number.
+Ans: <xsl:if test="@isEven = 'yes'">

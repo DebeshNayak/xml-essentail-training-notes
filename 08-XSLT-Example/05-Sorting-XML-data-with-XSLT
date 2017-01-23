@@ -1,0 +1,4 @@
+Sorting XML data with XSLT:
+- We can use XSLT to sort the incoming XML data in ascending order and descending alphabetical order.
+- For that we use the following syntax:
+<xsl:sort select="">

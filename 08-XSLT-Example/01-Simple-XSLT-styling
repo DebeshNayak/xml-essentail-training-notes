@@ -1,0 +1,4 @@
+Simple XSLT styling:
+- Chrome doesn't allow you to execute XML transforms from local files, you have
+  to serve them from the server.
+Example: 09-Simple-XSLT-Styling project

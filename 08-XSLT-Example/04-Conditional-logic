@@ -1,0 +1,15 @@
+Conditional Logic:
+- One of the powerful capabilities of XSLT, is the ability to apply style sheet
+  templates, based upon the values of the incoming XML data.
+
+  - Conditional tag
+  <xsl:if test="condition">
+
+  - Switch statement like tag
+  <xsl:choose>, <xsl:when>, <xsl:otherwise>
+
+- Using XSLT it is pretty easy, straight forward to incorporate conditional logic
+  into these style sheets.
+
+Example: 12-conditional-logic-if-condition project
+13-conditional-logic-switch-statement project
