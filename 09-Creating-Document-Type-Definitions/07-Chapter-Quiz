@@ -1,0 +1,11 @@
+1. You can declare a DTD externally and then associate it with more than one XML document.
+Ans: True
+
+2. Declare an element named TEST that can contain other elements or text.
+Ans: <!ELEMENT TEST ANY>
+
+3. With attribute types, which of the following can be used to indicate any literal string?
+Ans: CDATA
+
+4. With element declaration, select the option that indicates that the releaseDate is optional.
+Ans: releaseDate?

@@ -1,0 +1,54 @@
+Declaring elements in DTD:
+---------------------------
+<!ELEMENT Name ContentSpecification>
+
+Name - Name of the element of the content that we are going to be declaring
+ContentSpecification - What the valid contents for the element is?
+
+- Element can contain one of four different types of what are know as content models.
+1. EMPTY content - element has no child elements
+Ex: Image tag in HTML(<img />), Horizontal rule tag (<hr />)
+
+2. ANY content - element has not content constraints
+  - It can contain anything.
+
+3. Element content - can contain specified elements
+4. Mixed content - can contain elements and character data
+
+------------------
+
+1. ANY content declaration:
+<!ELEMENT MISCELLANEOUS ANY>
+
+2. EMPTY content declaration:
+<!ELEMENT IMG EMPTY>
+
+3. Character data content declaraction:
+<!ELEMENT NAME (#PCDATA)>
+
+PCDATA - Parsed Character Data
+
+4. Element content declaration:
+  i. Sequence Model Declaration -
+  <!ELEMENT CD (TITLE, ARTIST)>
+  - Here we have an CD element.
+  - Which contains tow child elements TITLE, and ARTIST
+  - The child elements have to appear in that order.
+  ii. Choice Model Declaration -
+  <!ELEMENT DWELLING (HOUSE|APARTMENT|TRAILER)>
+  - Here we have an DWELLING element.
+  - And inside the DWELLING element we have either one HOUSE, or one APARTMENT, OR one TRAILER element
+  - We are allowed to choose only one of the 3 elements as the child element.
+
+5. Mixed Content declaration:
+  <!ELEMENT TITLE (#PCDATA|SUBTITLE)>
+  - To define mixed content we would use the #PCDATA keyword with the vertical bar and any other elements that
+    we would like to see allowed inside the element.
+-------------------
+How many elements are allowed to appear inside the element that we are defining?:
+* Specifying element population limits
+  - ? means zero or one of the element
+  - + means one or more of the element
+  - * means  zero of more of the element
+
+<!ELEMENT LETTER (A+, B*, C+)>

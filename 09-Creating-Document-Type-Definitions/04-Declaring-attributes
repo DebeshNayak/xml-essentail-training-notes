@@ -1,0 +1,33 @@
+Declaring Attributes in DTD:
+- All attributes must be declared
+- Format:
+<!ATTLIST ElementName AttrName Type DefaultDecl>
+
+ATTLIST - keyword
+ElementName - Element name
+AttrName - Attribute name
+Type - Attribute type
+DefaultCecl - Default declaration for the attribute
+
+--------------------
+Attributes types:
+- These are of 3 types:
+  * String: indicated by CDATA
+  Example: <!ATTLIST PACKAGE status CDATA "OK">
+
+  * Enumerated: can be one of a list of values
+  Example: <ATTLIST DWELLING type (house|apartment|trailer)>
+
+  * Tokenized: used for IDs, other advanced DTD features
+-------------------
+Default Attributes:
+1 - #REQUIRED: attribute must be present
+Example: <!ATTLIST PACKAGE ontime (yes|no) #REQUIRED>
+
+2 - #IMPLIED: attribute is optional
+Example: <!ATTLIST PACKAGE ontime (yes|no) #IMPLIED>
+
+3 - Default value: value to use for default
+
+4 - #FIXED: value is fixed at a certain value
+Example: <!ATTLIST PACKAGE ontime CDATA #FIXED "yes">

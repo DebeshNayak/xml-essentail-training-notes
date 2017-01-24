@@ -1,0 +1,19 @@
+What is a DTD?:
+----------------
+- There are a couple of different ways to associate sets of rules with your XML documents,
+  to help ensure their quality and make sure that they are, as error free as possible.
+- One of those ways is through what's called document type definitions(DTD).
+--------------------
+- Provide way to constrain XML document content
+- Specify what kind of content can appear and where
+- Can be included in XML file, or be external to document
+- Relatively simple to write, but not powerful
+-------------
+Why would you use a DTD?
+1 - If we are taking XML code and giving it to third parties, then it's a good idea to
+  make sure that the XML code is in a proper format. And DTD help make that possible.
+  - So we can give DTD out to people that are consuming your XML and when the parser goes
+  to load the XML, it will compare the DTD rule set with the content, so that the errors can
+  be found quickly.
+2 - Certain kinds of XML tools like XML Editors can also use DTDs to help you create
+  XML content on the fly, so that errors won't be introduced while the creation process.

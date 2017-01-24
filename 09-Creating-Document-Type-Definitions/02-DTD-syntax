@@ -1,0 +1,15 @@
+DTD Syntax and Content:
+- Markup declarations that define document content.
+- DTDs can specify:
+  Elements
+  Attributes
+  Entities
+  Notations
+  Processing Instructions
+  Comments
+  Parameter Entity References
+----------------
+DTD Format:
+<!DOCTYPE Name [
+  Document Type Definition
+]>
