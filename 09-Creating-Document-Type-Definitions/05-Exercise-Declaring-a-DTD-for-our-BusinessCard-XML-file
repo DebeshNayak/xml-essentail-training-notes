@@ -1,3 +1,17 @@
 Exercise: Delcaring a DTD for our BusinessCard XML file:
 
+- Inline DTD can be included using the following code:
+
+<!DOCTYPE BusinessCard [
+
+<!ELEMENT BusinessCard (Name, phone+, email?)>
+<!ELEMENT Name (#PCDATA)>
+
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone type (mobile | fax | work | home) #REQUIRED>
+
+<!ELEMENT email (#PCDATA)>
+
+]>
+
 Example: 15-Declaring-internal-DTD project

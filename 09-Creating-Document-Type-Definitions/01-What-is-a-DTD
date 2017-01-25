@@ -5,8 +5,8 @@ What is a DTD?:
 - One of those ways is through what's called document type definitions(DTD).
 --------------------
 - Provide way to constrain XML document content
-- Specify what kind of content can appear and where
-- Can be included in XML file, or be external to document
+- Specify what kind of content can appear
+- Where can be included in XML file, or be external to document
 - Relatively simple to write, but not powerful
 -------------
 Why would you use a DTD?

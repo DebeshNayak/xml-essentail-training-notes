@@ -46,7 +46,7 @@ Important DOM Properties:
   - nodeType: The node's type. Element, Comment, Text, etc.
   - nodeValue: The node's value. Varies based on node type
   - attributes: For elements only. An array of attributes and values
-  - parentNode: The parent of this node. Null If there is no parent
+  - parentNode: The parent of this node. Null if there is no parent
   - childNodes: Array of child nodes. Empty if there are none
   - firstChild, lastChild: References to first and last child of this node
   - previousSibling, nextSibling: References to previous and next sibling of this node

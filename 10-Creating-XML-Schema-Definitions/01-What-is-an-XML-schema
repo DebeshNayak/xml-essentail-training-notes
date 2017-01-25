@@ -1,0 +1,9 @@
+What is an XML schema?
+- XML schema is an alternative way of enforcing rules and constraints on your XML
+  data.
+-----------
+XML Schema:
+- Alternative way of specifying rules to DTDs.
+- Provide way to constrain XML document content.
+- Written using XML syntax.
+- Similar to DTDs but more powerful and sophisticated.

@@ -1,7 +1,7 @@
 XML namespaces:
 - XML Namespaces are used so that you can combine data from separate sources without having
   to worry about tag name collisions.
-- Form(example): <html xmlns="http://www.w3.org/1999/xhtml">
+- Of the form(example): <html xmlns="http://www.w3.org/1999/xhtml">
 - Prevent tags from different languages from conflicting
 Example:
 HTML:

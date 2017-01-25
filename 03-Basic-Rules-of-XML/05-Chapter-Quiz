@@ -2,7 +2,7 @@
 Ans: <!-- This is a test -->
 
 2. XML documents can have more than one root tag.
-Ans: Yes, this is false.
+Ans: This is false.
 
 3. The purpose of using XML namespaces is to prevent tags in different languages
   from conflicting with each other when you try to use them in the same XML document.

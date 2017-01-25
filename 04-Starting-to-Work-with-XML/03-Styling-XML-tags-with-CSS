@@ -2,4 +2,6 @@ Styling XML tags with CSS:
 - Here we are working on how we can style the XML content so that the text will be appeared in
   multi lines.
 
+- To display the XML content in multi-line, we have to add "display: block;" CSS property.
+
 Example: 03-Styling-XML-tags-with-CSS

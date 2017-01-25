@@ -1,0 +1,14 @@
+1. A DTD is more powerful than an XML schema.
+Ans: False
+
+2. Select the item that is most appropriate for showing the power of an XML schema.
+Ans: Elements can be restricted to having certain values.
+
+3. Which of the following attributes means the same thing as default?
+Ans: fixed
+
+4. When you do not specify a minOccurs value, that means the element ____________.
+Ans: has to occur at least one time.
+
+5. You can restrict content of elements based on patterns using regular expressions.
+Ans: True

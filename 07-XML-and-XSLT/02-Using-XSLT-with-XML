@@ -3,29 +3,29 @@ Common XSLT Elements:
 ------------------
 - Define a stylesheet:
 <xsl:stylesheet>
-
+---------------------
 - xsl template tag:
   1. With match attribute
   <xsl:template match="xpath expression">
 
   2. With name attribute: Are called as if they are functions
-
+---------------------
 - To select data or extract data from a matched tag:
 <xsl:value-of select="xpath">
-
+---------------------
 - Insert attribute:
 <xsl:attribute>
 <xsl:text>
-
+---------------------
 - Loop tag
 <xsl:for-each select="xpath">
-
+---------------------
 - Conditional tag
 <xsl:if test="condition">
-
+---------------------
 - Switch statement like tag
 <xsl:choose>, <xsl:when>, <xsl:otherwise>
-
+---------------------
 - To select data for sorting in the output stream
 <xsl:sort select="">
 ------------------

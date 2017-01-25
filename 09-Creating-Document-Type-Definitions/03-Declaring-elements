@@ -5,7 +5,7 @@ Declaring elements in DTD:
 Name - Name of the element of the content that we are going to be declaring
 ContentSpecification - What the valid contents for the element is?
 
-- Element can contain one of four different types of what are know as content models.
+- Element can contain one of following four different types of what are know as content models.
 1. EMPTY content - element has no child elements
 Ex: Image tag in HTML(<img />), Horizontal rule tag (<hr />)
 
@@ -23,7 +23,7 @@ Ex: Image tag in HTML(<img />), Horizontal rule tag (<hr />)
 2. EMPTY content declaration:
 <!ELEMENT IMG EMPTY>
 
-3. Character data content declaraction:
+3. Character data content declaration:
 <!ELEMENT NAME (#PCDATA)>
 
 PCDATA - Parsed Character Data
@@ -32,7 +32,7 @@ PCDATA - Parsed Character Data
   i. Sequence Model Declaration -
   <!ELEMENT CD (TITLE, ARTIST)>
   - Here we have an CD element.
-  - Which contains tow child elements TITLE, and ARTIST
+  - Which contains two child elements TITLE, and ARTIST
   - The child elements have to appear in that order.
   ii. Choice Model Declaration -
   <!ELEMENT DWELLING (HOUSE|APARTMENT|TRAILER)>
@@ -49,6 +49,6 @@ How many elements are allowed to appear inside the element that we are defining?
 * Specifying element population limits
   - ? means zero or one of the element
   - + means one or more of the element
-  - * means  zero of more of the element
+  - * means  zero or more of the element
 
 <!ELEMENT LETTER (A+, B*, C+)>

@@ -1,0 +1,139 @@
+Declaring Elements in Schema:
+- Declared using <xsd:element> tag
+- Can be declared as either simple or complex type
+- Elements can have mixed, empty, or element content
+- Elements can have min and max  times they can occur
+- Elements can be restricted to having certain values (this is the real power of Schema)
+-----------------------
+Simple Schema Types:
++--------------+-----------------------------+---------------------+
+|   Function   |        Description          |   Example           |
++------------------------------------------------------------------+
+|xsd:string    |Sequence of character        |Hello World          |
++------------------------------------------------------------------+
+|xsd:boolean   |Boolean value                |True, False, 1, 0    |
++------------------------------------------------------------------+
+|xsd:decimal   |Number that may have a decimal -79.3, 12, 3.14159  |
++------------------------------------------------------------------+
+|xsd:integer   |Number with no decimal       |-5, 0, 1123123123    |
++------------------------------------------------------------------+
+|xsd:positiveInteger  Integer larger than 0  |12, 100, 1000000     |
++------------------------------------------------------------------+
+|xsd:negativeInteger  Integer less than 0    |-3, -487, -918317127 |
++------------------------------------------------------------------+
+|xsd:anyURI    |A valid URI                  |http://debesh.com    |
++------------------------------------------------------------------+
+|xsd:date      |Calendar date, CCYY-MM-DD    |1980-08-28           |
++------------------------------------------------------------------+
+|xsd:time      |Time of day, hh:mm:ss.ss     |12:14:00.00          |
++------------------------------------------------------------------+
+|xsd:dateTime  |Combination of date and time |1980-08-28:00:00.00  |
++------------------------------------------------------------------+
+|xsd:gMonth    |Gregorian month, as --MM--   |--12-- (December)    |
++------------------------------------------------------------------+
+|xsd:gYear     |Gregorian year, as CCYY      |1980                 |
++------------------------------------------------------------------+
+|xsd:gDay      |Gregorian day, as ----DD     |----05               |
++------------------------------------------------------------------+
+|xsd:gYearMonth|Gregorian Year/Day, CCYY-MM  |1931-05              |
++------------------------------------------------------------------+
+-----------------------------
+** Declaring Elements in Schema:
+<xsd:element name="Name" type="xsd:string">
+<xsd:element name="HireDate" type="xsd:date">
+<xsd:element name="Friends" type="xsd:string" minoccurs="1" maxoccurs="unbounded">
+<xsd:element name="Phone" type="xsd:string" maxoccurs="5">
+
+- "minoccurs" - specifies what is the minimum no of occurrence of the element
+- "maxoccurs" - specifies what is the maximum no of occurrence of the element
+- The default value of "minoccurs" and "maxoccurs" attribute is 1.
+---------------------
+1. Declaring Simple Types:
+* Can declare custom types, derived from existing types:
+<xsd:element name="InvitedGuests">
+  <xsd:simpleType>
+    <xsd:restriction base="xsd:positiveInteger">
+      <xsd:minInclusive value="0">
+      <xsd:maxInclusive value="50">
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:element>
+
+- Here "minInclusive" - include 0 and values above it.
+- "maxinclusive" - include 100 and values under it.
+----------------------
+* Can restrict content to a range of choices
+<xsd:element name="dwelling">
+  <xsd:simpleType>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="house">
+      <xsd:enumeration value="apartment">
+      <xsd:enumeration value="trailer">
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:element>
+------------------------
+* Restrictions can even use Regular Expression Patterns
+<xsd:element name="SSN">
+  <xsd:simpleType>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{3}-\d{2}-\d{4}">
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:element>
+-------------------------
+2. Declaring Complex Types:
+- Use the xsd:anyType value for the type attribute
+---------------------
+* Use the <xsd:complexType> tag in the definition
+<xsd:element name="EmptyElem">
+  <xsd:complexType>
+  </xsd:complexType>
+</xsd:element>
+-------------------------
+* Declaring elements with mixed content
+<xsd:element name="title">
+  <xsd:complexType mixed="true">
+    <xsd:sequence>
+      <xsd:element name="subtitle">
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+- So the "title" element can only contain only one "subtitle" element
+
+
+* Declaring element with element content:
+  1. Sequence: the element inside it should be appear in same order as it is mentioned inside it.
+<xsd:element name="address">
+  <xsd:complexType>
+    <xsd:sequence>
+      <xsd:element name="num" type="xsd:integer">
+      <xsd:element name="street" type="xsd:string">
+      <xsd:element name="city" type="xsd:string">
+      <xsd:element name="state" type="xsd:string">
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+  2. Choice: The element inside it should have one of the element inside it.
+<xsd:element name="vechile">
+  <xsd:complexType>
+    <xsd:choice>
+      <xsd:element name="car" type="xsd:string">
+      <xsd:element name="bus" type="xsd:string">
+      <xsd:element name="van" type="xsd:string">
+      <xsd:element name="truck" type="xsd:string">
+    </xsd:choice>
+  </xsd:complexType>
+</xsd:element>
+
+3. All: The element inside it should appear in any order.
+<xsd:element name="CapitalCity">
+  <xsd:complexType>
+    <xsd:all>
+      <xsd:element name="name" type="xsd:string">
+      <xsd:element name="state" type="xsd:string">
+      <xsd:element name="pop" type="xsd:positiveInteger">
+    </xsd:all>
+  </xsd:complexType>
+</xsd:element>

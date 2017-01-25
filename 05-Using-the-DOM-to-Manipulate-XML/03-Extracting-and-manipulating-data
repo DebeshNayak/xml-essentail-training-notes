@@ -2,6 +2,6 @@ Extracting and manipulating data:
 - Here we will learn how to use the DOM to extract and manipulate some document
   content.
 - So using the DOM, you can also extract information from the document and insert
-  it other places.
+  it to other places.
 
-Example: 06-Extracting-Manipulating-Data
+Example: 06-Extracting-Manipulating-Data project

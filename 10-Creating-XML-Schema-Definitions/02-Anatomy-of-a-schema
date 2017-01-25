@@ -1,0 +1,10 @@
+Anatomy of a schema:
+* Uses namespace http://wwww.w3.org/2001/XMLSchema
+* Usually uses the "xsd" prefix
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="ElemName">
+    <!-- other content definitions go in here -->
+    <xsd:attribute name="AttrName">
+  </xsd:element>
+</xsd:schema>

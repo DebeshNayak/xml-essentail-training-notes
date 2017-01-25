@@ -11,7 +11,7 @@ In this chapter we will describe the following:
 -----------
 1. Types of XML Contents:
 +------------------------------------------------------------------------+
-|XML document declarati|<?xml version="1.0" encoding="UTF|8" standalone="yes"?>
+|XML document declarati|<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 +------------------------------------------------------------------------|
 |Elements and Attirbute|<element attribute="value">                      |
 +------------------------------------------------------------------------+
